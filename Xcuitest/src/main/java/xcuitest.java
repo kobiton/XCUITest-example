@@ -13,8 +13,8 @@ public class xcuitest {
     UIAutomatorTest();
   }
   public static String generateBasicAuth() {
-	  String username = "gyanadeeps";
-      String apiKey = "15a9ea3f-38fb-450c-9706-08a72ed71950";
+	  String username = "kobiton.username";
+      String apiKey = "dd21c1-6124-5223-9b8a-51e01b41263e";
     byte[] encodedBytes = Base64.getEncoder().encode((username + ":" + apiKey).getBytes());
     String encodeAuth = new String(encodedBytes);
     return "Basic " + encodeAuth;
@@ -24,10 +24,7 @@ public class xcuitest {
     try {
       List<String> tests = new ArrayList<String>();
       tests.add("com.todolist.app.version1");
-      //tests.add("ChangeTextBehaviorTest");
-      //tests.add("ChangeTextBehaviorTest#testChangeText_sameActivity");
-
-      
+           
      
       JSONObject options = new JSONObject();
 
